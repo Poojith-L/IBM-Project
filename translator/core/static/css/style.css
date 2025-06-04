@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+/* Language Selectors */
+.language-selectors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language-selectors select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 45%;
+}
+
+.language-selectors span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Translator Box */
+.translator-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .language-selectors {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .language-selectors select {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
